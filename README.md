@@ -1,6 +1,6 @@
 # Nudge
 
-A PowerShell profile add-on that watches for failed commands in your terminal and automatically explains what went wrong — using a local LLM via [Ollama](https://ollama.com), so nothing ever leaves your machine.
+A PowerShell profile add-on that watches for failed commands in your terminal and automatically explains what went wrong, using a local LLM via [Ollama](https://ollama.com), so nothing ever leaves your machine.
 
 ## Features
 
@@ -8,7 +8,7 @@ A PowerShell profile add-on that watches for failed commands in your terminal an
 - Suggests a corrected command when it's confident about the fix
 - Skips known-noisy failures (configurable ignore list)
 - Follow-up chat mode to dig deeper into a specific failure
-- Fast, local, and works offline — no API keys, no cloud calls
+- Fast, local, and works offline, no API keys, no cloud calls
 
 ## Prerequisites
 
@@ -61,12 +61,12 @@ The PowerShell profile hooks into the prompt render cycle to detect failed comma
 
 Edit these variables near the top of `nudge-profile.ps1`:
 
-- `$script:ignoredCommands` — commands to never check (default: `grep`, `findstr`, `robocopy`)
+- `$script:ignoredCommands`, commands to never check (default: `grep`, `findstr`, `robocopy`)
 
 And in `nudge.py`:
 
-- `MODEL_NAME` — which Ollama model to use
+- `MODEL_NAME`, which Ollama model to use
 
 ## License
 
-MIT (or your preferred license — add a `LICENSE` file if you want one)
+MIT (or your preferred license, add a `LICENSE` file if you want one)
