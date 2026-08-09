@@ -69,4 +69,4 @@ And in `nudge.py`:
 
 ## License
 
-MIT (or your preferred license, add a `LICENSE` file if you want one)
+GNU GPLv3
